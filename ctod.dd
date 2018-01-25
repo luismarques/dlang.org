@@ -222,7 +222,7 @@ $(H4 The C Way)
 $(CCODE
 #define ARRAY_LENGTH        17
 int array[ARRAY_LENGTH];
-for (i = 0; i &lt; ARRAY_LENGTH; i++)
+for (size_t i = 0; i &lt; ARRAY_LENGTH; i++)
     array[i] = value;
 )
 
@@ -955,7 +955,7 @@ tchar string[] = TEXT("hello");
 )
     Furthermore, in practice `wchar_t` is not usable in portable code as its size
     is implementation dependent. On POSIX conforming machines it generally
-    represents an UTF-32 codeunit, on Windows an UTF-16 code unit. C11 introduced
+    represents an UTF-32 code unit, on Windows an UTF-16 code unit. C11 introduced
     C++11 types char16_t and char32_t to overcome this issue.
 
 $(H4 The D Way)
